@@ -61,7 +61,7 @@
 	var ws;
 
 	function wsOpen(){
-		//웹소켓 전송시 현재 방의 번호를 넘겨서 보낸다.
+		//웹소켓 전송시 현재 방의 번호를 넘겨서 보냄
 		ws = new WebSocket("ws://" + location.host + "/chating/"+$("#roomNumber").val());
 		wsEvt();
 	}
@@ -142,7 +142,7 @@
 				msg : $("#chatting").val(),
 				userName : $("#userName").val()
 			}
-			ws.send(JSON.stringify(param)); //파일 보내기전 메시지를 보내서 파일을 보냄을 명시한다.
+			ws.send(JSON.stringify(param)); //파일 보내기전 메시지를 보내서 파일을 보냄을 명시
 
 		    arrayBuffer = this.result;
 			ws.send(arrayBuffer); //파일 소켓 전송
