@@ -142,7 +142,7 @@
 				msg : $("#chatting").val(),
 				userName : $("#userName").val()
 			}
-			ws.send(JSON.stringify(param)); //파일 보내기전 메시지를 보내서 파일을 보냄을 명시
+			ws.send(JSON.stringify(param)); //파일 보내기전 메시지를 보내서 파일을 보냄을 명시시
 
 		    arrayBuffer = this.result;
 			ws.send(arrayBuffer); //파일 소켓 전송
